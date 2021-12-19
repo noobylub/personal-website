@@ -75,7 +75,7 @@ function App() {
             }}
             className={classNames({
               Skills: true,
-              clicked: pressed == "HTMLCSS",
+              clicked: pressed === "HTMLCSS",
             })}
           >
             Website Building
@@ -91,7 +91,7 @@ function App() {
             }}
             className={classNames({
               Skills: true,
-              clicked: pressed == "General",
+              clicked: pressed === "General",
             })}
           >
             Javascript
@@ -107,7 +107,7 @@ function App() {
             }}
             className={classNames({
               Skills: true,
-              clicked: pressed == "Analyzing",
+              clicked: pressed === "Analyzing",
             })}
           >
             Analyzing Companies
@@ -163,7 +163,7 @@ function App() {
             </a>
           </div>
           <div className="one">
-            <a href="">
+           
               <h4>Story Organization</h4>
               <hr />
               <p>
@@ -172,7 +172,7 @@ function App() {
                 in which palestinian refugees are able to share their stories
                 freely, and the other side can make remarks also.
               </p>
-            </a>
+          
           </div>
           <div className="one">
             <a href="https://github.com/noobylub/Lottery-Solidity">
@@ -187,7 +187,7 @@ function App() {
             </a>
           </div>
           <div className="one">
-            <a href="">
+           
               <h4>Blockchain Kickstarter </h4>
               <hr />
               <p>
@@ -196,7 +196,7 @@ function App() {
                 money is stored in the smart contract making it very
                 transparent.
               </p>
-            </a>
+           
           </div>
         </div>
         <div className="grades-header">
