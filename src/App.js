@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { useState, useEffect } from "react";
 function App() {
   const [pressed, setPressed] = useState("");
-  const cursors = document.querySelector(".cursor");
+  
   useEffect(() => {
     const cursors = document.querySelector(".cursor");
     window.addEventListener("mousemove", (e) => {
@@ -122,7 +122,7 @@ function App() {
             }}
             className={classNames({
               Skills: true,
-              clicked: pressed == "Blockchain",
+              clicked: pressed ==="Blockchain",
             })}
           >
             Blockchain Ethereum
