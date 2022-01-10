@@ -50,7 +50,7 @@ function App() {
           that.
         </p>
         <div className="learn-more">
-          <a href="https://docs.google.com/document/d/1eiAItk7mayDx1GFl_ws1dVc3VvZFVuyifHM-VsQhzwo/edit">
+          <a href="https://docs.google.com/document/d/1Ys1_tT4ODS8DQG3_fRZQynFsaF8nADSr51cNm2OKhiA/edit?usp=sharing">
             <h3>personal statement</h3>
           </a>
         </div>
@@ -138,7 +138,7 @@ function App() {
         <div className="projects">
           <div className="one">
             <a href="https://docs.google.com/document/d/1eKclFaBDFCUF6jIcPrTbNzztVUwtVTnKpeX4sOyIo5s/edit">
-              <h4>Link</h4>
+              <h4>Investment Club</h4>
 
               <hr />
               <p>
@@ -188,13 +188,13 @@ function App() {
           </div>
           <div className="one">
            
-              <h4>Blockchain Kickstarter </h4>
+              <h4>Blockchain Warranty Management </h4>
               <hr />
               <p>
                 Still in the planning process; however, I plan to implement
-                kickstarter through blockchain. The way it works is that the
-                money is stored in the smart contract making it very
-                transparent.
+                a more efficient warranty management service. The app would essentially keep track of your warranty in 
+                one place, so that it is easier for you to keep track of your warranties. Furthermore, this warranty will
+                be implemented in the blockhchain.  
               </p>
            
           </div>
