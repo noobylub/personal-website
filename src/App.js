@@ -84,17 +84,19 @@ function App() {
             onClick={() => {
               setPressed("General");
               setContent(
-                "Possesess a wide range of knowledge with Javascript. Understands the basic and some advanced topics of Javascript, such as arrow functions, error handling, mongoDB data retrieval  " +
+                "Possesess a wide range of knowledge with Javascript. Understands the basic and some advanced topics of Javascript, such as arrow functions, error handling, mongoDB data retrieval, and creating full fledged backend  " +
                   "However it is worth noting that my knowledge of Javascript is still limited and potentially partial, as I learned it al on " +
-                  "Udemy all on my own accord. Due to my acknowledgement of my partial knowledge in Javascript, I wish to learn more javascript to implement into my future projects."
+                  "Udemy all on my own accord. Due to my acknowledgement of my partial knowledge in Javascript, I wish to learn more javascript to implement into my future projects."  +
+                  "Moreover, I have extensive knowledge in java programming.  "
               );
             }}
             className={classNames({
+              javascript:true,
               Skills: true,
               clicked: pressed === "General",
             })}
           >
-            Javascript
+            General Coding
           </div>
           <div
             onClick={() => {

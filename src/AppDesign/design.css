@@ -405,6 +405,42 @@ a {
   font-family: "Bebas Neue", cursive;
 }
 
+@-webkit-keyframes fadingIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadingIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadingOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadingOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .second-part .contacts {
   width: 75%;
   margin: 40px 0 0 10%;
@@ -441,6 +477,10 @@ a {
   visibility: visible;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation: fadingIn .6s;
+          animation: fadingIn .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .second-part .contacts .icon {
@@ -450,6 +490,8 @@ a {
   font-weight: 800;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation: fadingOut 1s;
+          animation: fadingOut 1s;
 }
 
 .second-part .contacts .linkedin {
