@@ -25,7 +25,7 @@ function App() {
             strings: [
               '<h1 className="text">Hello my name is Muhammad Lubbil Mushoffa</h1>',
               '<h1 className="text">A motivated and educated high school student</h1>',
-              '<h1 className="text">I am looking for new oppurtunities and a mentor for me to learn and achieve more</h1>',
+              '<h1 className="text">I am looking for new oppurtunities for me to learn and achieve more</h1>',
             ],
             autoStart: true,
             loop: true,
@@ -257,7 +257,7 @@ function App() {
               wrapperClassName: "text",
               strings: [
                 "Contact Muhammad Lubbil Mushoffa",
-                "I am looking for a mentor or oppurtunities that will allow me to learn more",
+                "I am looking oppurtunities that will allow me to learn more",
               ],
               autoStart: true,
               loop: true,
