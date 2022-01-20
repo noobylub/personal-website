@@ -18,8 +18,10 @@ function App() {
   const [content, setContent] = useState();
 
   return (
+  
     <div className="App">
       <div className="first-part">
+        <img src="./myself.jpeg"></img>
         <Typewriter
           options={{
             strings: [
