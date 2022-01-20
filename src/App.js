@@ -1,5 +1,6 @@
 import "./AppDesign/design.css";
 import Typewriter from "typewriter-effect";
+import myImage from "./myself.jpeg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import classNames from "classnames";
 import { useState, useEffect } from "react";
@@ -21,7 +22,7 @@ function App() {
   
     <div className="App">
       <div className="first-part">
-        <img src="./myself.jpeg"></img>
+        <img src={myImage}></img>
         <Typewriter
           options={{
             strings: [
