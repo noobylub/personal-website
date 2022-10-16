@@ -1,9 +1,9 @@
 import "./AppDesign/design.css";
 import Typewriter from "typewriter-effect";
-import myImage from "./myself.jpeg";
+
 import { AiOutlineArrowRight } from "react-icons/ai";
 import classNames from "classnames";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function App() {
   const [pressed, setPressed] = useState("");
 
