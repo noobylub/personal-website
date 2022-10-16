@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
-  cursor: none;
   padding: 0;
 }
 
@@ -12,7 +11,7 @@ a {
 }
 
 .first-part {
-  height: 40vh;
+  height: 60vh;
   font-family: "Bebas Neue", cursive;
   padding-top: 25%;
   letter-spacing: 0.1cm;
@@ -24,120 +23,88 @@ a {
   font-weight: 300;
   padding-bottom: 100vh;
   font-family: "Nunito", sans-serif;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .second-part .intro {
   margin-left: 10%;
   width: 800px;
   padding: 20px 20px 20px 0px;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .second-part .intro hr {
   background-color: black;
   text-decoration: none;
   height: 0.05cm;
   margin-bottom: 0.1cm;
 }
-
+.second-part .intro span {
+  font-weight: bold;
+  color: white;
+  padding: 1px;
+  background-color: black;
+}
 @media (max-width: 900px) {
   .second-part .intro {
     width: 400px;
     font-size: smaller;
   }
 }
-
 .second-part .learn-more {
   margin-left: 10%;
   width: 100px;
   padding: 10px;
   border: solid black 0.07cm;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .second-part .learn-more:hover {
   background-color: black;
-  -webkit-transition: 1s;
   transition: 1s;
-  cursor: none;
+  cursor: pointer;
 }
-
 .second-part .learn-more:hover h3 {
   color: white;
   font-weight: 600;
 }
-
 .second-part .horizontal {
   width: 100%;
-  height: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 10px;
   display: flex;
   margin: 0;
-  margin-top: 25vh;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin-top: 20vh;
+  flex-grow: 1;
 }
-
 .second-part .horizontal .box-sm {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-transition: all 1s ease-in-out;
+  flex-grow: 1;
   transition: all 1s ease-in-out;
 }
-
 .second-part .horizontal .box-sm:hover {
-  -webkit-box-flex: 12;
-      -ms-flex-positive: 12;
-          flex-grow: 12;
+  flex-grow: 12;
 }
-
 .second-part .horizontal .brown {
   background-color: bisque;
 }
-
 .second-part .horizontal .white {
   background-color: white;
 }
-
 .second-part .horizontal .black {
   background-color: black;
 }
-
 .second-part .horizontal .green {
-  background-color: #c4f8c4;
+  background-color: rgb(196, 248, 196);
 }
-
 .second-part .header {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .second-part .skill-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 5% 1% 10px 1%;
 }
-
 .second-part .skill-list .Skills {
+  cursor: pointer;
   width: 100px;
   margin-top: auto;
   margin-bottom: auto;
@@ -145,48 +112,38 @@ a {
   color: white;
   padding: 20px;
   background-color: black;
-  -webkit-transition: 1s;
   transition: 1s;
   font-weight: 800;
 }
-
 .second-part .skill-list .Skills:hover {
   border-radius: 20px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: bisque;
   color: black;
 }
-
 .second-part .skill-list .clicked {
   border-radius: 20px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: bisque;
   color: black;
 }
-
 .second-part .content {
   margin: 20vh auto 5vh auto;
-  -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
   text-align: center;
   width: 800px;
   height: 50vh;
   letter-spacing: 0.1pc;
 }
-
 .second-part .content hr {
   margin-top: 0.5cm;
 }
-
 @media (max-width: 900px) {
   .second-part .content {
     width: 400px;
     font-size: smaller;
   }
 }
-
 .second-part .border {
   background-color: burlywood;
   height: 5px;
@@ -194,29 +151,17 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-
 .second-part .proje {
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .second-part .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 30vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .second-part .projects .one {
   letter-spacing: 0.005cm;
   margin: 2cm;
@@ -224,118 +169,76 @@ a {
   border: solid 1px green;
   width: 200px;
   text-align: center;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .second-part .projects .one h4 {
   font-size: larger;
   padding-bottom: 10px;
 }
-
 .second-part .projects .one p {
   padding-top: 5px;
 }
-
 .second-part .projects .one:hover {
   background-color: black;
   color: white;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .second-part .projects .one:hover a {
   color: white;
 }
-
 .second-part .projects .one .link {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
-
 .second-part .grades-header {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
-
 .second-part .grades {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 50px;
   text-align: center;
   width: 50%;
   margin: 50px auto 0 auto;
 }
-
 .second-part .grades .course {
   margin: 20px;
-  -webkit-transition: 1s;
   transition: 1s;
   padding: 10px;
   height: 40px;
   border: solid 1px black;
 }
-
 .second-part .grades .course:hover {
-  -webkit-transition: 1s;
   transition: 1s;
   background-color: black;
 }
-
 .second-part .grades .course:hover > .grade {
   visibility: visible;
   color: white;
 }
-
 .second-part .grades .grade {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   visibility: hidden;
 }
-
 @media (max-width: 700px) {
   .second-part .grades {
     font-size: x-small;
   }
 }
-
 .second-part .GPA-header {
   margin-top: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
-
 .second-part .GPA-header hr {
   margin-bottom: 20px;
   margin-left: auto;
@@ -344,7 +247,6 @@ a {
   background-color: black;
   height: 0.1cm;
 }
-
 @media (max-width: 800px) {
   .second-part .GPA-header {
     font-size: 20px;
@@ -353,58 +255,42 @@ a {
     height: 0.01cm;
   }
 }
-
 .second-part .GPA {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   height: 20vh;
   width: 100%;
 }
-
 @media (max-width: 800px) {
   .second-part .GPA {
     font-size: xx-small;
   }
 }
-
 .second-part .GPA .year {
   border-radius: 20px;
-  -webkit-transition: 1s;
   transition: 1s;
   text-align: center;
   padding: 5px 20px;
 }
-
 .second-part .GPA .year:hover {
-  -webkit-transition: 1s;
   transition: 1s;
   background-color: black;
   color: white;
 }
-
 .second-part .contact-header {
   margin: 20vh auto 10px 10%;
 }
-
 .second-part .contact-header hr {
   width: 75%;
   height: 5px;
   border: solid burlywood 1px;
   background-color: burlywood;
 }
-
 .second-part .contact-header .text {
   font-size: 40px;
   font-family: "Bebas Neue", cursive;
 }
-
 @-webkit-keyframes fadingIn {
   from {
     opacity: 0;
@@ -413,7 +299,6 @@ a {
     opacity: 1;
   }
 }
-
 @keyframes fadingIn {
   from {
     opacity: 0;
@@ -422,7 +307,6 @@ a {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadingOut {
   from {
     opacity: 1;
@@ -431,7 +315,6 @@ a {
     opacity: 0;
   }
 }
-
 @keyframes fadingOut {
   from {
     opacity: 1;
@@ -440,79 +323,57 @@ a {
     opacity: 0;
   }
 }
-
 .second-part .contacts {
   width: 75%;
   margin: 40px 0 0 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: left;
+  flex-direction: column;
 }
-
 .second-part .contacts .contact {
   height: 40px;
   width: 200px;
   padding: 10px 20px;
   font-size: 25px;
-  -webkit-transition: 1s;
   transition: 1s;
   margin: 20px;
 }
-
 .second-part .contacts .contact:hover {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
+  transform: translateX(20px);
 }
-
 .second-part .contacts .contact:hover > .icon {
-  -webkit-transform: translate(180px, -120%);
-          transform: translate(180px, -120%);
+  transform: translate(180px, -120%);
   visibility: visible;
-  -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: fadingIn .6s;
-          animation: fadingIn .6s;
+  -webkit-animation: fadingIn 0.6s;
+          animation: fadingIn 0.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-
 .second-part .contacts .icon {
-  -webkit-transform: translateY(-120%);
-          transform: translateY(-120%);
+  transform: translateY(-120%);
   visibility: hidden;
   font-weight: 800;
-  -webkit-transition: 1s;
   transition: 1s;
   -webkit-animation: fadingOut 1s;
           animation: fadingOut 1s;
 }
-
 .second-part .contacts .linkedin {
   color: white;
-  background-color: #0077b5;
+  background-color: rgb(0, 119, 181);
 }
-
 .second-part .contacts .email {
-  background-color: #d44638;
-  color: #eeeeee;
+  background-color: rgb(212, 70, 56);
+  color: rgb(238, 238, 238);
 }
 
 .cursor {
   position: fixed;
   width: 40px;
   height: 40px;
-  background: #57f157;
+  background: rgb(87, 241, 87);
   border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   mix-blend-mode: color-burn;
   pointer-events: none;
-}
-/*# sourceMappingURL=design.css.map */
+}/*# sourceMappingURL=design.css.map */

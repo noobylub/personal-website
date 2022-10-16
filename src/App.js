@@ -6,29 +6,27 @@ import classNames from "classnames";
 import { useState, useEffect } from "react";
 function App() {
   const [pressed, setPressed] = useState("");
-  
-  useEffect(() => {
-    const cursors = document.querySelector(".cursor");
-    window.addEventListener("mousemove", (e) => {
-      cursors.style.left = e.clientX + "px";
-      cursors.style.top = e.clientY + "px";
-    });
-    return () => {};
-  }, []);
+
+  // useEffect(() => {
+  //   const cursors = document.querySelector(".cursor");
+  //   window.addEventListener("mousemove", (e) => {
+  //     cursors.style.left = e.clientX + "px";
+  //     cursors.style.top = e.clientY + "px";
+  //   });
+  //   return () => {};
+  // }, []);
 
   const [content, setContent] = useState();
 
   return (
-  
     <div className="App">
       <div className="first-part">
-        <img src={myImage}></img>
+        {/* <img src={myImage}></img> */}
         <Typewriter
           options={{
             strings: [
               '<h1 className="text">Hello my name is Muhammad Lubbil Mushoffa</h1>',
-              '<h1 className="text">A motivated and educated high school student</h1>',
-              '<h1 className="text">I am looking for new oppurtunities for me to learn and achieve more</h1>',
+              '<h1 className="text">A motivated and educated first year university student</h1>',
             ],
             autoStart: true,
             loop: true,
@@ -36,25 +34,20 @@ function App() {
         />
       </div>
       <div className="second-part">
-        <div className="cursor"></div>
+        {/* <div className="cursor"></div> */}
 
         <p className="intro">
-          <hr />
-          My name is Muhammad Mushoffa, and I am a student at Kings Academy. I
-          wish to study Computer Science and Business. I love to create things,
-          which is why I am incredibly motivated to learn to code. My passion
-          for legos inspired my current aspirations. Beginning with legos as a
-          child. I love to build anything to my heart's content. However, I also
-          love Businesses and learn more about them and ponder the question,
-          "what makes a succesfull business." Currently, I am taking a
-          tremendous amount of interest in Blockchain Technology. I am
-          interested in its wide range of applications in our world. I believe
-          Blockchain can change our world, and I wish to be at the forefront of
-          that.
+          <hr />I am a <span>passionate, motivated, and ambitious</span>{" "}
+          first-year student at Loughborough University,{" "}
+          <span>willing to go further</span>
+          to achieve the desired goal. Once I set my mind to a plan, nothing can
+          and will stop me from <span>reaching that goal</span>. At the same
+          time, my thirst of knowledge can never be quenched, as I{" "}
+          <span>continiously hone new and old skils.</span>
         </p>
         <div className="learn-more">
           <a href="https://docs.google.com/document/d/1Ys1_tT4ODS8DQG3_fRZQynFsaF8nADSr51cNm2OKhiA/edit?usp=sharing">
-            <h3>personal statement</h3>
+            <h3>CV letter</h3>
           </a>
         </div>
 
@@ -73,7 +66,7 @@ function App() {
             onClick={() => {
               setPressed("HTMLCSS");
               setContent(
-                "Proficient in HTML & CSS. Able to make Responsive and Static Web applications using HTML and CSS. Utilizing HTML and CSS and a javascript library, I can build a full-fledged website from scratch. For example, I created this personal website using React and CSS. Moreover, I learned a CSS framework named SCSS, which I used to build this website."
+                "Proficient in HTML & CSS. Utilizing HTML and CSS and javascript libraries, I can build a full-fledged website from scratch. For example, I created this personal website using React and CSS. Moreover, I learned a CSS framework named SCSS, which I used to build this website."
               );
             }}
             className={classNames({
@@ -87,14 +80,13 @@ function App() {
             onClick={() => {
               setPressed("General");
               setContent(
-                "Possesess a wide range of knowledge with Javascript. Understands the basic and some advanced topics of Javascript, such as arrow functions, error handling, mongoDB data retrieval, and creating full fledged backend  " +
-                  "However it is worth noting that my knowledge of Javascript is still limited and potentially partial, as I learned it al on " +
-                  "Udemy all on my own accord. Due to my acknowledgement of my partial knowledge in Javascript, I wish to learn more javascript to implement into my future projects."  +
-                  "Moreover, I have extensive knowledge in java programming.  "
+                "Possesess a wide range of knowledge with Javascript such as arrow functions, error handling, data retrieval. " +
+                  "Able to construct a full fledged backend with Node.JS, and a frontend with Express or React.JS." +
+                  " Moreover, I have extensive knowledge in java programming, able to solve complex java problems."
               );
             }}
             className={classNames({
-              javascript:true,
+              javascript: true,
               Skills: true,
               clicked: pressed === "General",
             })}
@@ -121,13 +113,13 @@ function App() {
             onClick={() => {
               setPressed("Blockchain");
               setContent(
-                "Understands the concept of blockchain and its technicalities. Able to create a blockchain smart contrat; however to a limited" +
-                  " extent. I am working hard everyday to improve on my knowledge of blockchain and implement these newly acquired knowledge in the projects that is to come. "
+                "Understands the concept of blockchain and its technicalities. Able to create a blockchain smart contract" +
+                  ". Adept at connecting the smart contract with a web application using Hardhat. "
               );
             }}
             className={classNames({
               Skills: true,
-              clicked: pressed ==="Blockchain",
+              clicked: pressed === "Blockchain",
             })}
           >
             Blockchain Ethereum
@@ -157,61 +149,61 @@ function App() {
           </div>
 
           <div className="one">
-            <a href="https://github.com/noobylub/PersonalFrontend">
-              <h4>Connection Website</h4>
+            <a href="https://6229c306baf6e9609483f851--yal3ab.netlify.app">
+              <h4>Gaming Website</h4>
               <hr />
               <p>
-                A work in progress website that allows you to list your favorite
-                things . After listing out your favorite website you are then
-                able to find people that has similar interest to your list.
+                Website that allows the player to play hangman and Memory Card.
+                Utilized complex javascript in order to implement the logics of
+                the game itself. At the same time, utilized react technology in
+                order to implement the frontend of the website.
               </p>
             </a>
           </div>
           <div className="one">
-           
-              <h4>Story Organization</h4>
+            <a href="https://noobylub.github.io/Topic-VR-Project/">
+              <h4>Vr-application</h4>
               <hr />
               <p>
-                Still in the planning process; however, we plan to make
-                substantial progress soon. However, we wist to create a website
-                in which palestinian refugees are able to share their stories
-                freely, and the other side can make remarks also.
-              </p>
-          
-          </div>
-          <div className="one">
-            <a href="https://github.com/noobylub/Lottery-Solidity">
-              <h4>Blockchain Lottery</h4>
-              <hr />
-              <p>
-                A completed simple Blockchain lottery project. Essentially
-                people enter a lottery and the owner of the lottery chooses a
-                winner. I have tested, tried and played with the lottery. This
-                was done for training purposes.
+                Pushed the limits of React technology, and created a Virtual
+                Reality application. The application utilized A-frame technology
+                in combination with React.
               </p>
             </a>
           </div>
           <div className="one">
-           
-              <h4>Blockchain Warranty Management </h4>
+            <a href="https://github.com/noobylub/nft-marketplace">
+              <h4>Blockchain NFT Marketplace</h4>
               <hr />
               <p>
-                Still in the planning process; however, I plan to implement
-                a more efficient warranty management service. The app would essentially keep track of your warranty in 
-                one place, so that it is easier for you to keep track of your warranties. Furthermore, this warranty will
-                be implemented in the blockhchain.  
+                A completed NFT marketplace implementation. Utilized 
+                Hardhat for blockchain integration
+                ,React for the frontend, displaying the data, 
+                Solidity languange for the smart contract Blockhain. 
+
               </p>
-           
+            </a>
+          </div>
+          <div className="one">
+            <a href="https://github.com/noobylub/loyalty-startup">
+              <h4>Blockchain Loyalty Startup </h4>
+              <hr />
+              <p>
+                Still in the planning process; however, I plan to implement a
+                loyalty program utilizing Blockchain Technology. It will be the
+                first of its kind, a loyalty program entirely on a new and
+                revolutinary technology, Blockchain. Linked is the current
+                Github Repository showcasing the project's process.
+              </p>
+            </a>
           </div>
         </div>
         <div className="grades-header">
           <h1>Education</h1>
           <hr />
           <p>
-            Due to my status of being a student, I do not have much experience;
-            however, I would like to acquire experience if oppurtunities arise.
-            For example, if you are aware of any experience work I could
-            acquire, please contact me.
+            Listed below are the classes I took previously and classes I am taking. AP score, are the 
+            final exam score. 
           </p>
         </div>
         <div className="grades">
@@ -229,15 +221,23 @@ function App() {
           </div>
           <div className="course">
             <h3 className="name">Topics in Programming</h3>
-            <h3 className="grade">A grade 2nd Year college</h3>
-          </div>
-          <div className="course">
-            <h3 className="name">Advanced Comparative Government</h3>
-            <h3 className="grade">A grade </h3>
+            <h3 className="grade">A grade 2nd Year college course</h3>
           </div>
           <div className="course">
             <h3 className="name">Advanced Calculus</h3>
-            <h3 className="grade">B+ grade</h3>
+            <h3 className="grade">B+ grade 4/5 AP score</h3>
+          </div>
+          <div className="course">
+            <h3 className="name">Software Engineering 1</h3>
+            <h3 className="grade">Currently taking the module</h3>
+          </div>
+          <div className="course">
+            <h3 className="name">Introduction to Accounting</h3>
+            <h3 className="grade">Currently taking the module</h3>
+          </div>
+          <div className="course">
+            <h3 className="name">Computer Systems</h3>
+            <h3 className="grade">Currently taking the module</h3>
           </div>
         </div>
 
