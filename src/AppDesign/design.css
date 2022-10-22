@@ -93,7 +93,7 @@ a {
   background-color: rgb(196, 248, 196);
 }
 .second-part .header {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -101,7 +101,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 5% 1% 10px 1%;
+  padding: 1% 1% 10px 1%;
 }
 .second-part .skill-list .Skills {
   cursor: pointer;
@@ -128,7 +128,7 @@ a {
   color: black;
 }
 .second-part .content {
-  margin: 20vh auto 5vh auto;
+  margin: 20vh auto 1vh auto;
   transition: 0.1s ease-in-out;
   text-align: center;
   width: 800px;
@@ -152,19 +152,19 @@ a {
   margin-left: auto;
 }
 .second-part .proje {
-  margin: 20px;
+  margin: 10px;
   display: flex;
   justify-content: center;
 }
 .second-part .projects {
   display: flex;
   justify-content: center;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
   flex-wrap: wrap;
 }
 .second-part .projects .one {
   letter-spacing: 0.005cm;
-  margin: 2cm;
+  margin: 0.5cm;
   padding: 20px;
   border: solid 1px green;
   width: 200px;

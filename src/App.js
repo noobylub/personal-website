@@ -7,21 +7,14 @@ import { useState } from "react";
 function App() {
   const [pressed, setPressed] = useState("");
 
-  // useEffect(() => {
-  //   const cursors = document.querySelector(".cursor");
-  //   window.addEventListener("mousemove", (e) => {
-  //     cursors.style.left = e.clientX + "px";
-  //     cursors.style.top = e.clientY + "px";
-  //   });
-  //   return () => {};
-  // }, []);
+ 
 
   const [content, setContent] = useState();
 
   return (
     <div className="App">
       <div className="first-part">
-        {/* <img src={myImage}></img> */}
+       
         <Typewriter
           options={{
             strings: [
@@ -33,8 +26,9 @@ function App() {
           }}
         />
       </div>
+
       <div className="second-part">
-        {/* <div className="cursor"></div> */}
+       
 
         <p className="intro">
           <hr />I am a <span>passionate, motivated, and ambitious</span>{" "}
@@ -60,6 +54,8 @@ function App() {
             <div class="box-sm green"></div>
           </div>
         </div>
+
+
         <h1 className="header">My Skills</h1>
         <div className="skill-list">
           <div
@@ -130,8 +126,10 @@ function App() {
           {content}
           <hr />
         </p>
+
+        
         <hr className="border" />
-        <h1 className="proje">Current project</h1>
+        <h1 className="proje">Current projects</h1>
         <div className="projects">
           <div className="one">
             <a href="https://docs.google.com/document/d/1eKclFaBDFCUF6jIcPrTbNzztVUwtVTnKpeX4sOyIo5s/edit">
@@ -262,7 +260,7 @@ function App() {
               wrapperClassName: "text",
               strings: [
                 "Contact Muhammad Lubbil Mushoffa",
-                "I am looking oppurtunities that will allow me to learn more",
+                "I am currently looking oppurtunities that will allow me to learn more",
               ],
               autoStart: true,
               loop: true,

@@ -98,7 +98,7 @@ a {
   }
   // The skils part
   .header {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
@@ -106,7 +106,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5% 1% 10px 1%;
+    padding: 1% 1% 10px 1%;
 
     .Skills {
       cursor: pointer;
@@ -137,7 +137,7 @@ a {
     }
   }
   .content {
-    margin: 20vh auto 5vh auto;
+    margin: 20vh auto 1vh auto;
     transition: 0.1s ease-in-out;
     text-align: center;
     width: 800px;
@@ -161,18 +161,18 @@ a {
     margin-left: auto;
   }
   .proje {
-    margin: 20px;
+    margin: 10px;
     display: flex;
     justify-content: center;
   }
   .projects {
     display: flex;
     justify-content: center;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
     flex-wrap: wrap;
     .one {
       letter-spacing: 0.005cm;
-      margin: 2cm;
+      margin: 0.5cm;
       padding: 20px;
       border: solid 1px green;
       h4 {
