@@ -47,6 +47,9 @@ a {
       width: 400px;
       font-size: smaller;
     }
+    @media (max-width : 500px){
+      width: 300px;
+    }
   }
   .learn-more {
     margin-left: 10%;
@@ -108,6 +111,7 @@ a {
     padding: 1% 1% 10px 1%;
 
     .Skills {
+      
       cursor: pointer;
       width: 100px;
       margin-top: auto;
@@ -125,6 +129,11 @@ a {
 
         background-color: bisque;
         color: black;
+      }
+      @media (max-width : 600px){
+        width: 50px;
+        font-size: 10px;
+        padding: 10px;
       }
     }
     .clicked {
@@ -221,7 +230,7 @@ a {
     }
   }
 
-  //   The grades section
+  //   The grades and education section
   .grades-header {
     margin-left: auto;
     margin-right: auto;
@@ -239,10 +248,10 @@ a {
     margin-top: 50px;
     text-align: center;
     width: 50%;
-    margin: 50px auto 0 auto;
+    margin: 20px auto 0 auto;
 
     .course {
-      margin: 20px;
+      margin: 10px;
       transition: 1s;
       padding: 10px;
       height: 40px;
@@ -261,7 +270,12 @@ a {
       visibility: hidden;
     }
     @media (max-width: 700px) {
+      width: 100%;
+      margin: 20px;
       font-size: x-small;
+      .course{
+        width: 100px;
+      }
     }
   }
 

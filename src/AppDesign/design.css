@@ -49,6 +49,11 @@ a {
     font-size: smaller;
   }
 }
+@media (max-width: 500px) {
+  .second-part .intro {
+    width: 300px;
+  }
+}
 .second-part .learn-more {
   margin-left: 10%;
   width: 100px;
@@ -120,6 +125,13 @@ a {
   transition: 0.5s ease-in-out;
   background-color: bisque;
   color: black;
+}
+@media (max-width: 600px) {
+  .second-part .skill-list .Skills {
+    width: 50px;
+    font-size: 10px;
+    padding: 10px;
+  }
 }
 .second-part .skill-list .clicked {
   border-radius: 20px;
@@ -227,10 +239,10 @@ a {
   margin-top: 50px;
   text-align: center;
   width: 50%;
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 .second-part .grades .course {
-  margin: 20px;
+  margin: 10px;
   transition: 1s;
   padding: 10px;
   height: 40px;
@@ -250,7 +262,12 @@ a {
 }
 @media (max-width: 700px) {
   .second-part .grades {
+    width: 100%;
+    margin: 20px;
     font-size: x-small;
+  }
+  .second-part .grades .course {
+    width: 100px;
   }
 }
 .second-part .GPA-header {

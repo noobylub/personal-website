@@ -1,7 +1,7 @@
 import "./AppDesign/design.css";
 import Typewriter from "typewriter-effect";
 import Skills from "./Components/mySkill";
-import { AiOutlineArrowRight } from "react-icons/ai";
+
 import Education from "./Components/education";
 import CurrentProject from "./Components/currentProject";
 import Gpa from "./Components/gpa";
@@ -34,8 +34,8 @@ function App() {
           <span>continiously hone new and old skils.</span>
         </p>
         <div className="learn-more">
-          <a href="https://docs.google.com/document/d/1Ys1_tT4ODS8DQG3_fRZQynFsaF8nADSr51cNm2OKhiA/edit?usp=sharing">
-            <h3>CV letter</h3>
+          <a href="">
+            <h3>CV letter in progress</h3>
           </a>
         </div>
 

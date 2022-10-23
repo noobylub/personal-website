@@ -18,13 +18,13 @@ function CurrentProject() {
           }}
           onMouseLeave={onLeave}
         >
-          {hover == "first" ? (
+          {hover === "first" ? (
             <div>
               <h4>Investment Club</h4>
               <hr />
               <div className="links">
                 <a href="https://docs.google.com/document/d/1eKclFaBDFCUF6jIcPrTbNzztVUwtVTnKpeX4sOyIo5s/edit">
-                  <p>Project Link</p>
+                  <p>Investment Thesis</p>
                 </a>
               </div>
             </div>
@@ -55,13 +55,17 @@ function CurrentProject() {
           }}
           onMouseLeave={onLeave}
         >
-          {hover == "second" ? (
+          {hover === "second" ? (
             <div>
               <h4>Gaming Website</h4>
               <hr />
               <div className="links">
-                <p>Project Website</p>
-                <p>Github link</p>
+                <a href="https://6229c306baf6e9609483f851--yal3ab.netlify.app">
+                  <p>Project Website</p>
+                </a>
+                <a href="https://github.com/noobylub/deploy-website">
+                  <p>Github link</p>
+                </a>
               </div>
             </div>
           ) : (
@@ -89,13 +93,17 @@ function CurrentProject() {
           }}
           onMouseLeave={onLeave}
         >
-          {hover == "third" ? (
+          {hover === "third" ? (
             <div>
               <h4>Vr-application</h4>
               <hr />
               <div className="links">
-                <p>Project Website</p>
-                <p>Github Link</p>
+                <a href="https://noobylub.github.io/Topic-VR-Project/">
+                  <p>Project Website</p>
+                </a>
+                <a href="https://github.com/noobylub/Topic-VR-Project">
+                  <p>Github Link</p>
+                </a>
               </div>
             </div>
           ) : (
@@ -122,13 +130,15 @@ function CurrentProject() {
           }}
           onMouseLeave={onLeave}
         >
-          {hover == "fourth" ? (
+          {hover === "fourth" ? (
             <div>
-              {" "}
               <h4>Blockchain NFT Marketplace</h4>
               <hr />
               <div className="links">
-                <p>Github</p>
+                <a href="https://github.com/noobylub/nft-marketplace">
+                  <p>Github</p>
+                </a>
+
                 <h4>Still in progress</h4>
                 <hr />
               </div>
@@ -157,12 +167,14 @@ function CurrentProject() {
           }}
           onMouseLeave={onLeave}
         >
-          {hover == "fifth" ? (
+          {hover === "fifth" ? (
             <div>
               <h4>Blockchain Loyalty Startup </h4>
               <hr />
               <div className="links">
-                <p>Github</p>
+                <a href="https://github.com/noobylub/loyalty-startup">
+                  <p>Github</p>
+                </a>
                 <h4>Still in progress</h4>
                 <hr />
               </div>
