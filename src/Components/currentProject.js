@@ -160,6 +160,7 @@ function CurrentProject() {
           )}
         </div>
 
+
         <div
           className="one"
           onMouseEnter={() => {
@@ -196,6 +197,48 @@ function CurrentProject() {
             </div>
           )}
         </div>
+
+        <div
+          className="one"
+          onMouseEnter={() => {
+            setHover("sixth");
+          }}
+          onMouseLeave={onLeave}
+        >
+          {hover === "sixth" ? (
+            <div>
+              <h4>Blockchain Loyalty Startup </h4>
+              <hr />
+              <div className="links">
+                <a href="https://github.com/noobylub/python-intro-project">
+                  <p>Github</p>
+                </a>
+               
+                <hr />
+              </div>
+            </div>
+          ) : (
+            <div>
+              <h4>Blockchain Loyalty Startup </h4>
+              <hr />
+              <p>
+                A Comprehensive library management system for a librarian to manage libraries. There is a main interface, and 
+                ouputs in the Terminal. 
+              </p>
+              <div className="more-info">
+                <hr />
+                <p>Click or hover to find out more</p>
+              </div>
+            </div>
+          )}
+        </div>
+
+
+
+
+
+
+
       </div>
     </div>
   );
