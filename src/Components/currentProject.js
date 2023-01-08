@@ -207,7 +207,7 @@ function CurrentProject() {
         >
           {hover === "sixth" ? (
             <div>
-              <h4>Blockchain Loyalty Startup </h4>
+              <h4>Python Library Management</h4>
               <hr />
               <div className="links">
                 <a href="https://github.com/noobylub/python-intro-project">
@@ -219,7 +219,7 @@ function CurrentProject() {
             </div>
           ) : (
             <div>
-              <h4>Blockchain Loyalty Startup </h4>
+              <h4>Python Library Management</h4>
               <hr />
               <p>
                 A Comprehensive library management system for a librarian to manage libraries. There is a main interface, and 
